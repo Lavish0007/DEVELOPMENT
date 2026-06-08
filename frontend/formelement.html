@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>FORM</h1></center>
+    <form action="/action">
+        <label for="name">
+            Username : 
+        </label>
+        <input type="text" placeholder="enter username " id="name" name="UserName"><br><br>
+        <!-- name is necessary to give kyuki jab submit hoga tab u can see its value -->
+         <!-- required and checked and selected bhi seekhne ko mila -->
+        <label for="pswd">
+            Password : 
+            <input type="password" id="pswd" name="password" required><br><br>
+        </label>
+        <label for="chck"></label>
+        <input type="checkbox" name="age" id="chck" checked>I am 18+
+        <br><br>
+        Fruit : <br>
+        <label for="a">Apple</label>
+        <input type="radio" id="a" name="fruit" value="apple"><br>
+        <label for="m">Mango</label>
+        <input type="radio" id="m" name="fruit" value="mango"><br>
+        <label for="l">Litchi</label>
+        <input type="radio" id="l" name="fruit" value="litchi"><br>
+        <div>
+            Choose your Profession : 
+            <select name="work" id="work">
+                <option value="stu">Student</option>
+                <option value="dev" selected>Developer</option>
+                <option value="man">Manager</option>
+            </select>
+        </div>
+        <br><br>
+        <label for="feed">Please give your feedback : </label>
+        <textarea name="feedback" id="feed" rows="5" cols="100"></textarea>
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
