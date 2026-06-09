@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(213, 250, 5);
+    letter-spacing: 10px;
+    font-family: Georgia, Times, Times New Roman, serif;
+    color: rgb(216, 58, 58);
+}
+h2{
+    text-align: center;
+    text-decoration: rgb(54, 135, 247) underline;
+    text-decoration-style:wavy;
+}
+p{
+    text-align: justify;
+    line-height: 2.5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
