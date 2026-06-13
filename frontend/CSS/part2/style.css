@@ -22,5 +22,28 @@ p a{
 }
 
 p+h3{
-    text-decoration: underline;
+    text-decoration: underline;  /* Sibling combinator = immediate baad waali cheezon ko slect krta hai + */
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color: blue;
+}
+
+/* child combinator = matlab direct child */
+
+div > input{
+    background-color: black;
+    color: yellow;
+    font-weight: 600;
+    padding: 5px;
+}
+
+/* pseudo element */
+h1::first-letter{
+    font-size: 40px;
+}
+
+h3::selection{
+    background-color: limegreen; /* jo bhi humne slect kra hua hai woh change ho jayega*/
 }
