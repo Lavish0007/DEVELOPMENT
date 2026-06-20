@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Rectangle</title>
+    <style>
+        .rec{
+            margin: 0 auto;
+            height: 300px;
+            width: 80%;
+            border: 5px solid black;
+            background-color: azure;
+
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: center;
+            /* align-content:flex-end; */ 
+            /* works only when flex wrap is enabled */
+            flex-wrap: wrap;
+        }
+        .inner{
+            height: 100px;
+            width: 200px;
+            /* text-align: center; */
+            color: white;
+            font-weight: 800;
+        }
+
+    </style>
+</head>
+<body >
+    <center>
+        <h1>FLEXBOX PLAYGROUND</h1>
+    </center>
+    <div class="rec">
+        <div class="inner" style=" background:red;">Red</div>
+        <div class="inner" style=" background:orange;">orange</div>
+        <div class="inner" style=" background:yellow;">yellow</div>
+        <!-- <div class="inner" style=" background:green;">green</div>
+        <div class="inner" style=" background:blue;">blue</div>
+        <div class="inner" style=" background:indigo;">indigo</div>
+        <div class="inner" style=" background:violet;">violet</div> -->
+    </div>
+
+</body>
+</html>
