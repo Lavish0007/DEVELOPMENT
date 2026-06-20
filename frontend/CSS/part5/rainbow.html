@@ -13,19 +13,24 @@
             background-color: azure;
 
             display: flex;
-            flex-direction: row;
-            justify-content:center;
+            flex-direction: column;
+            justify-content:space-evenly;
             align-items: center;
             /* align-content:flex-end; */ 
             /* works only when flex wrap is enabled */
             flex-wrap: wrap;
         }
         .inner{
+            flex-basis: 500px;
             height: 100px;
             width: 200px;
             /* text-align: center; */
             color: white;
             font-weight: 800;
+        }
+        .red{
+            align-self: flex-end;
+            /* have highest priority > align item and you can control individual items with it */
         }
 
     </style>
@@ -35,7 +40,7 @@
         <h1>FLEXBOX PLAYGROUND</h1>
     </center>
     <div class="rec">
-        <div class="inner" style=" background:red;">Red</div>
+        <div class="inner red" style=" background:red;">Red</div>
         <div class="inner" style=" background:orange;">orange</div>
         <div class="inner" style=" background:yellow;">yellow</div>
         <!-- <div class="inner" style=" background:green;">green</div>
