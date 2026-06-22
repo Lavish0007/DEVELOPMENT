@@ -1,0 +1,30 @@
+@keyframes colorpr {
+    0%{
+        background-color: blueviolet;
+        font-size: 30px;
+    }
+    30%{
+        background-color: aqua;
+        font-size: 40px;
+    }
+    60%{
+        background-color:chartreuse;
+        font-size: 50px;
+    }
+    100%{
+        background-color:crimson;
+        font-size: 60px;
+    }
+}
+
+div{
+    margin: 0 auto;
+    color: aliceblue;
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    padding: 3px;
+
+    animation: colorpr 4s ease 0s infinite alternate;
+}
+
