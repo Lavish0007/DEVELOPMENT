@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .card{
+            border-radius: 10px;
+            height: 240px;
+            width: 300px;
+            margin: 10px;
+            border: 2px solid gainsboro;
+            
+        }
+        .head{
+            margin: 0 10px;
+            border-bottom: 2px solid gray;
+            background-color: rgba(234, 234, 234, 0.758);
+        }
+        .card:hover{
+            border: 2px solid rgb(53, 126, 228);
+            transition: all 0.5s linear;
+            transform:translateY(-2px);
+            box-shadow:0 12px 30px rgba(0,0,0,.12);
+        }
+        h4{
+            text-align: center;
+            margin: 0;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+        .content{
+            text-align: center;
+            font-size: larger;
+        }
+        .content p{
+            font-size: 0.8rem;
+            line-height: 2px;
+            font-weight: 300;
+        }
+        .light{
+            border: 2px solid rgb(0, 106, 255);
+            color:rgb(0, 106, 255);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .light:hover{
+            background-color: rgb(0, 106, 255);
+            color: aliceblue;
+        }
+        h3{
+            font-size: 30px;
+        }
+        @media (max-width:992px) {
+            .container{
+                flex-wrap: wrap;
+            }
+        }
+        .drk{
+            background-color: rgb(0, 89, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing</h1>
+    <div class="container">
+        <div class="card one ">
+            <div class="head">
+                <h4>Free</h4>
+                
+            </div>
+            <div class="content">
+                <h3>&dollar;0 / mo</h3>
+                <p>10 users included</p>
+                <p>2 GB of Storage</p>
+                <p>Email support</p>
+                <button class="light">sign up for free</button>
+            </div>
+
+         </div>
+        <div class="card one ">
+            <div class="head">
+                <h4>Pro</h4>
+                
+            </div>
+            <div class="content">
+                <h3>&dollar;15 / mo</h3>
+                <p>10 users included</p>
+                <p>2 GB of Storage</p>
+                <p>Email support</p>
+                <button class="light drk">Get started</button>
+            </div>
+
+         </div>
+        <div class="card one ">
+            <div class="head">
+                <h4>Enterprise</h4>
+                
+            </div>
+            <div class="content">
+                <h3>&dollar;29 / mo</h3>
+                <p>10 users included</p>
+                <p>2 GB of Storage</p>
+                <p>Email support</p>
+                <button class="light drk">Contact us</button>
+            </div>
+
+         </div>
+    </div>
+    
+</body>
+</html>
