@@ -218,3 +218,131 @@ a{
     border-top: 1px solid white;
     opacity: 0.4;
 }
+
+.music-player{
+    display: flex;
+}
+
+/* left song player  */
+.song-player{
+    width: 25%;
+    /* background-color: burlywood; */
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-player{
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+
+.large-text{
+    font-size: 0.95rem;
+    font-weight: 500;
+
+}
+
+.small-text{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+/* center music bar  */
+
+.music-bar{
+    /* background-color: cornflowerblue; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.player-time{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.player-bar{
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-player{
+    /* flex: 1; */
+    width: 60%;
+    height: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.range-player::-webkit-slider-runnable-track{
+    height: 4px;
+    border-radius: 100px;
+    background: #ffffff;
+}
+
+.range-player::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+
+    margin-top: -5px;
+    transition: 0.2s;
+}
+
+.range-player::-webkit-slider-thumb:hover{
+    transform: scale(1.2);
+}
+
+.player-icon{
+    height: 1rem;
+    opacity: 0.7;
+}
+.player-icon:hover{
+
+    opacity:1;
+}
+
+.icons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-icon{
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.player-bar{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.range-player{
+    margin: 0 1rem;
+}
+
+/* right controls */
+.controls{
+    /* background-color:chocolate; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
