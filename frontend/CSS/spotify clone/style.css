@@ -168,11 +168,6 @@ a{
     margin-left: 0.75rem;
 }
 
-@media (max-width:1000px){
-    .hide{
-        display: none;
-    }
-}
 
 .card{
     background-color: #232323;
@@ -242,7 +237,7 @@ a{
 .large-text{
     font-size: 0.95rem;
     font-weight: 500;
-
+    
 }
 
 .small-text{
@@ -291,12 +286,12 @@ a{
 .range-player::-webkit-slider-thumb{
     appearance: none;
     -webkit-appearance: none;
-
+    
     width: 14px;
     height: 14px;
     border-radius: 50%;
     background: white;
-
+    
     margin-top: -5px;
     transition: 0.2s;
 }
@@ -346,3 +341,16 @@ a{
 }
 
 
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+    .song-player,.controls{
+        display: none;
+    }
+    .music-bar{
+        width: 100%;
+        justify-content: center;
+    }
+}
