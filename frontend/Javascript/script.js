@@ -10,3 +10,5 @@
     }
  }
  student.getavg();
+
+ 
